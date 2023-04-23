@@ -34,7 +34,7 @@
   /* text-shadow: 0 0 5px #ff6f69, 0 0 10px #ff6f69, 0 0 15px #ff6f69; */
 }
 
-p {
+.innerBox1 p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 30px;

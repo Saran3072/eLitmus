@@ -49,17 +49,18 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: linear-gradient(to right, #8b0000, #000000);
   /* text-shadow: 2px 2px #4d4d4d; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  /* font-size: 80px; */
 }
 
-p {
+.innerBox p {
   font-size: 1.2rem;
-  color: linear-gradient(to right, #8b0000, #000000);
+  color: #000;
   /* text-shadow: 1px 1px #4d4d4d; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   line-height: 1.5;
   font-weight: 500;
 }
@@ -68,7 +69,7 @@ p {
   font-size: 1.2rem;
   color: #000000;
   /* text-shadow: 1px 1px #4d4d4d; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   line-height: 1.5;
   text-decoration: solid;
   font-weight: 700;

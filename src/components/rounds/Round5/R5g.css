@@ -9,7 +9,7 @@
   /* Unlocked box */
   .unlocked-box {
     background-color: #fff;
-    color: #000;
+    color: #fff;
     padding: 20px;
     font-family: 'Helvetica Neue', sans-serif;
   }
@@ -87,4 +87,22 @@
     margin-bottom: 10px;
     color: #fff;
   }
+  .unlocked-box h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .unlocked-box h1 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 100px;
+  }
   
+  .unlocked-box p {
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+    text-align: center;
+  }

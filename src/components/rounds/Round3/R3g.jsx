@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./R3g.css";
+import { Link } from "react-router-dom";
 
 const R3g = () => {
   const [timeLeft, setTimeLeft] = useState(15); // initial time left is 10 seconds
@@ -12,6 +13,7 @@ const R3g = () => {
     const answer = e.target.answer.value.toLowerCase().trim();
     if (answer === "fire") {
       setIsAnswerCorrect(true);
+      setIsGameOver(true);
       setScore(score + 1);
     } else {
       setIsAnswerCorrect(false);
@@ -24,6 +26,9 @@ const R3g = () => {
     if (timeLeft === 0) {
       setIsGameOver(true);
     }
+    if (isAnswerCorrect) {
+      setIsGameOver(true);
+    }
     const timer =
       timeLeft > 0 &&
       setInterval(() => {
@@ -32,18 +37,33 @@ const R3g = () => {
     return () => clearInterval(timer);
   }, [timeLeft]);
 
+  if (isGameOver && isAnswerCorrect) {
+    return (
+      <div className="R3g">
+        {/* <div className="inner"> */}
+          <h2 style={{paddingTop: "180px"}}>Congragulations!</h2>
+          <p>You Unclocked the 3rd clue</p>
+          <Link to="/round4intro">Round 4</Link>
+        {/* </div> */}
+      </div>
+    );
+  }
   if (isGameOver) {
     return (
       <div className="R3g">
-        <h2>Time's up!</h2>
-        <p>Better luck next time!</p>
+        <div className="inner">
+          <h2>Time's up!</h2>
+          <p>Better luck next time!</p>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="R3g">
-      <h2 style={{color: "#a00000"}}>Find the key</h2>
+      <h2 style={{ color: "#fff", fontSize: "100px" }} className="title">
+        Find the Key
+      </h2>
       <h2>
         I'm not alive, but I grow; I don't have lungs, but I need air; I don't
         have a mouth, but water kills me. What am I?

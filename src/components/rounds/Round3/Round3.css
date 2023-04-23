@@ -10,21 +10,25 @@
   justify-content: center;
   align-items: center;
 }
-.container1 {
+/* .container1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 80vh;
   background-color: #0c0c0c;
-}
+  margin-top: 300px;
+  width: 200%;
+} */
 
 .innerBox1 {
-  max-width: 500px;
+  margin-top: 280px;
+  /* max-width: 1000px; */
   text-align: center;
   background-color: #fff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .title1 {

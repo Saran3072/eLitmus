@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./R5g.css"
+import "./R5g.css";
+import { Link } from "react-router-dom";
 
 function R5g() {
   const [code, setCode] = useState(generateCode());
@@ -48,11 +49,12 @@ function R5g() {
     <div className="locked-box-challenge">
       {isOpen ? (
         <div className="unlocked-box">
-          <h2>Congratulations!</h2>
-          <p>
-            You have unlocked the box and found a clue that will help you solve
-            the murder case.
+          <h1 style={{ color: "#000" }}>Congratulations!</h1>
+          <p style={{ color: "#000" }}>
+            You have unlocked all the 5 clues and solved a Murder Mystery which
+            could not be solved by a lot of high profile detectives!
           </p>
+          <Link to="/"><h2>Home</h2></Link>
         </div>
       ) : (
         <div className="locked-box">
@@ -94,7 +96,7 @@ function LogicPuzzle({ onSolved }) {
       <h3>Logic Puzzle:</h3>
       <p>
         If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops
-        Lazzies?
+        Lazzies? What do you think?
       </p>
       <input
         type="text"
@@ -110,7 +112,7 @@ function Riddle({ onSolved }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (input.toLowerCase() === "a secret") {
+    if (input.toLowerCase() === "fire") {
       onSolved();
     } else {
       setInput("");
@@ -140,7 +142,7 @@ function BrainTeaser({ onSolved }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    if (input.toLowerCase() === "the letter e") {
+    if (input.toLowerCase() === "clue") {
       onSolved();
     } else {
       setInput("");
@@ -151,10 +153,7 @@ function BrainTeaser({ onSolved }) {
   return (
     <form onSubmit={handleSubmit}>
       <h3>Brain Teaser:</h3>
-      <p>
-        I am not alive, but I grow; I don't have lungs, but I need air; I don't
-        have a mouth, but I need water to live. What am I?
-      </p>
+      <p>What is the one thing that a detective always has with him?</p>
       <input
         type="text"
         value={input}

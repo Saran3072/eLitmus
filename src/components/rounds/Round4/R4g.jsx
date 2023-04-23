@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./R4g.css";
+import { Link } from "react-router-dom";
 
 const R4g = () => {
   const [timeLeft, setTimeLeft] = useState(60); // initial time left is 60 seconds
   const [isGameOver, setIsGameOver] = useState(false);
+  const [GameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [cards, setCards] = useState([
     { id: 1, symbol: "🔍", isFlipped: false, isMatched: false },
@@ -34,7 +36,7 @@ const R4g = () => {
   // check if the game is over when the score changes
   useEffect(() => {
     if (score === cards.length / 2) {
-      setIsGameOver(true);
+      setGameOver(true);
     }
   }, [score]);
 
@@ -109,10 +111,18 @@ const R4g = () => {
 
   return (
     <div className="R4g">
-      <h1>R4g</h1>
+      <h1>Swap Challenge</h1>
       <p>Score: {score}</p>
       <p>Time left: {timeLeft}</p>
       {isGameOver && (
+        <div>
+          <p>Game over!</p>
+          <p>Your final score was: {score}</p>
+          {/* <button onClick={() => window.location.reload()}>Play again</button> */}
+          <Link style={{color: "#fff"}} to="/round5intro">Round 5</Link>
+        </div>
+      )}
+      {GameOver && (
         <div>
           <p>Game over!</p>
           <p>Your final score was: {score}</p>

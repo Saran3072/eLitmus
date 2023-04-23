@@ -9,19 +9,20 @@ function Home() {
       <div className="innerBox">
         <h1 className="title">Welcome to the Mystery Quest!</h1>
         <p>
-          Are you ready to put your detective skills to the test? Follow the
-          clues, interrogate the suspects, and solve the case!
+          Are you ready to put your detective skills to the test? <br /> Follow
+          the clues and solve the case!
         </p>
         <p className="intro">
           You are a detective tasked with solving a high-profile murder case.
           The victim is a wealthy businessman who was found dead in his office.
           The police have gathered evidence and interviewed suspects, but they
           still haven't been able to identify the killer. The player must use
-          their detective skills to analyze the evidence, interview witnesses,
-          and solve puzzles to uncover the killer's identity and bring them to
-          justice.
+          their detective skills to analyze the evidence and solve puzzles to
+          uncover the killer's identity and bring them to justice.
         </p>
-        <Link to="/login"><button className="start-btn">Start</button></Link>
+        <Link to="/login">
+          <button className="start-btn">Start</button>
+        </Link>
       </div>
     </div>
   );
