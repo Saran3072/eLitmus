@@ -1,0 +1,95 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(to right, #8b0000, #000000); */
+  background-image: url(../../../../public/images/pexels-cottonbro-studio-10464480.jpg);
+  /* background: url('../../../../public/videos/muder-home.mp4') center center/cover no-repeat; */
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .containers { */
+  /* background: url('C:/Users/arama/NASSCOM/nasscom/src/assests/bg.jpg') center center/cover no-repeat; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* background-color: #f8efcc; */
+  /* margin: 0%; */
+/* } */
+/* video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+} */
+/* .video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+.innerBox {
+  min-width: 375px;
+  height: fit-content;
+  width: 65%;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  opacity: 90%;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: linear-gradient(to right, #8b0000, #000000);
+  /* text-shadow: 2px 2px #4d4d4d; */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: linear-gradient(to right, #8b0000, #000000);
+  /* text-shadow: 1px 1px #4d4d4d; */
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #000000;
+  /* text-shadow: 1px 1px #4d4d4d; */
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-decoration: solid;
+  font-weight: 700;
+}
+
+.start-btn {
+  outline: none;
+  border: none;
+  background-color: #990000;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 16px;
+  /* margin-left: 15%; */
+  width: 30%;
+  transition: 100ms;
+  cursor: pointer;
+  text-shadow: 1px 1px #4d4d4d;
+}
+
+.start-btn:hover {
+  background-color: #cc0000;
+}

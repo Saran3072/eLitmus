@@ -1,0 +1,71 @@
+.R3g {
+  background-image: url(../../../../public/images/round2.jpg);
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-size: 100%;
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  /* padding: 30px; */
+  text-align: center;
+  max-width: 100%;
+  /* margin: 0 auto; */
+}
+
+/* .inner{
+    width: 80%;
+} */
+
+.R3g h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.R3g p {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.R3g form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.R3g input[type="text"] {
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+}
+
+.R3g button[type="submit"] {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+  max-width: 200px;
+}
+
+.R3g button[type="submit"]:hover {
+  background-color: #a00000;
+}
+
+.R3g .correct {
+  color: #00ff00;
+  font-size: 24px;
+  margin-top: 20px;
+}
