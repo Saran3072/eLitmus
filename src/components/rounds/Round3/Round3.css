@@ -1,6 +1,6 @@
 .out{
-  height: 100%;
-  min-height: 100vh;
+  height: 200%;
+  min-height: 200vh;
   width: 100%;
   /* background: linear-gradient(to right, #8b0000, #000000); */
   background-image: url(../../../../public/images/intro.jpg);
@@ -17,11 +17,11 @@
   height: 80vh;
   background-color: #0c0c0c;
   margin-top: 300px;
-  width: 200%;
-} */
+  /* width: 200%; */
+/* } */ 
 
 .innerBox1 {
-  margin-top: 280px;
+  /* margin-top: 280px; */
   /* max-width: 1000px; */
   text-align: center;
   background-color: #fff;
@@ -29,6 +29,8 @@
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   width: 100%;
+  margin-top: 500px;
+  padding-top: 100px;
 }
 
 .title1 {

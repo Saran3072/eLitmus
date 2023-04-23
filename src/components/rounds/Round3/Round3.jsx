@@ -5,9 +5,9 @@ const Round3 = () => {
   return (
     <>
       <div className="out">
-        <div className="container1">
+        <div style={{marginTop: "270px"}} className="container1">
           <div className="innerBox1">
-            <h1 className="title1">"Word Jumble Challenge"</h1>
+            <h1 style={{marginTop: "0px"}} className="title1">Find Key</h1>
             <p>
               1. In this round, the player needs to find the key to the locked room
               by correctly answering the riddle. <br />
@@ -25,6 +25,7 @@ const Round3 = () => {
               player can proceed to the next round or choose to play this round
               again. <br />
             </p>
+            <p style={{color: "red", fontSize: "30px"}}>Careful this is a Dead End Round</p>
             <Link to="/round3">
               <button className="start-btn1">Start</button>
             </Link>

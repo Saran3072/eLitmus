@@ -7,7 +7,7 @@ const Round2 = () => {
       <div className="out">
         <div className="container1">
           <div className="innerBox1">
-            <h1 className="title1">"Word Jumble Challenge"</h1>
+            <h1 className="title1">Word Jumble Challenge</h1>
             <p>
               "Unscramble the letters to form a word related to crime. You have
               20 seconds to make each guess. Guess 8 out of 10 correctly to move

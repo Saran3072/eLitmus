@@ -43,7 +43,7 @@ const R3g = () => {
         {/* <div className="inner"> */}
           <h2 style={{paddingTop: "180px"}}>Congragulations!</h2>
           <p>You Unclocked the 3rd clue</p>
-          <Link to="/round4intro">Round 4</Link>
+          <Link style={{color: "#fff"}} to="/round4intro">Round 4</Link>
         {/* </div> */}
       </div>
     );
@@ -54,6 +54,7 @@ const R3g = () => {
         <div className="inner">
           <h2>Time's up!</h2>
           <p>Better luck next time!</p>
+          <Link style={{color: "#fff"}} to="/">Back to Home</Link>
         </div>
       </div>
     );

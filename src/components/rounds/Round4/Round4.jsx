@@ -7,7 +7,7 @@ const Round4 = () => {
       <div className="out">
         <div className="container1">
           <div className="innerBox1">
-            <h1 className="title1">"Swap Challenge"</h1>
+            <h1 className="title1">Swap Challenge</h1>
             <p>
               You are given with cards that continously swap, you neeed to select as many pairs as possible in the given time.
             </p>

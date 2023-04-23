@@ -3,7 +3,7 @@ import "./R4g.css";
 import { Link } from "react-router-dom";
 
 const R4g = () => {
-  const [timeLeft, setTimeLeft] = useState(60); // initial time left is 60 seconds
+  const [timeLeft, setTimeLeft] = useState(30); // initial time left is 60 seconds
   const [isGameOver, setIsGameOver] = useState(false);
   const [GameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
@@ -35,8 +35,9 @@ const R4g = () => {
 
   // check if the game is over when the score changes
   useEffect(() => {
-    if (score === cards.length / 2) {
+    if (score === 5) {
       setGameOver(true);
+      setIsGameOver(false);
     }
   }, [score]);
 
@@ -118,15 +119,15 @@ const R4g = () => {
         <div>
           <p>Game over!</p>
           <p>Your final score was: {score}</p>
-          {/* <button onClick={() => window.location.reload()}>Play again</button> */}
-          <Link style={{color: "#fff"}} to="/round5intro">Round 5</Link>
+          <button onClick={() => window.location.reload()}>Play again</button>
         </div>
       )}
       {GameOver && (
         <div>
           <p>Game over!</p>
           <p>Your final score was: {score}</p>
-          <button onClick={() => window.location.reload()}>Play again</button>
+          {/* <button onClick={() => window.location.reload()}>Play again</button> */}
+          <Link style={{color: "#fff"}} to="/round5intro">Round 5</Link>
         </div>
       )}
       <div className="card-grid">
